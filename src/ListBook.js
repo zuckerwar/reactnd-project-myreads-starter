@@ -11,7 +11,7 @@ class ListBook extends Component {
   render() {
     const { book, books, changeShelf } = this.props
 
-    let currentShelf = 'non'
+    let currentShelf = 'none'
 
     for (let item of books) {
       if (item.id === book.id) {
