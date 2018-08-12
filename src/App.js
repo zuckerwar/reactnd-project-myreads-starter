@@ -7,12 +7,10 @@ import Search from './Search'
 import AddBook from './AddBook'
 
 class BooksApp extends React.Component {
-  state = {
-    books: [],
-    showSearchPage: false
-  }
+  state = { books: []  }
 
   componentDidMount() {
+
     BooksAPI.getAll().then((books) => {
       this.setState({books})
     })
