@@ -18,7 +18,7 @@ class Search extends Component {
 
   getBooks = (event) => {
 
-    const query = event.target.value.trim()
+    const query = event.target.value.trimLeft()
     this.setState({ query: query })
 
     // if user input => run the search
